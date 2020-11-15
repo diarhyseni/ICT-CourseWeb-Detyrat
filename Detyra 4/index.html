@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>AquaBlue Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img src="images/logo.png" alt="Logo">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Restaurant & Bars</a></li>
+                <li><a href="#">Meetings & Weddings</a></li>
+                <li><a href="#">SPA</a></li>
+            </ul>
+        </nav>
+        <main>
+            <hr>
+            <article>
+                <h1>Welcome to AquaBlue Hotel</h1>
+                <div id="video">
+                    <iframe width="700" height="450" padding="5" src="https://www.youtube.com/embed/CW8DNG0-cLA"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <br>
+                    <p>Perfectly located on the famous black sandy beach of Perissa, five star Aqua Blue Hotel promises
+                        you a truly memorable experience. A private beach space with sun beds and umbrellas, 3 outdoor
+                        pools - including a kids’ pool are at your disposal, as well as a buffet restaurant for
+                        breakfast and dinner and a lounge bar serving drinks and snacks by the pool.
+                    </p>
+                </div>
+            </article>
+            <hr style="width: 1px; height: 600px; display: inline-block;">
+            <aside id="djathtas">
+                <h2 style="color: #0B5345; padding: 0%; margin: 0%; text-align: center;"> Hotel Reservation</h3>
+                    <br>
+                    <form id="revervimi" method="GET" action="rezervo.html" enctype="multipart/form-data"
+                        autocomplete="off form">
+                        <div class="float">
+                            <label for="name">First Name: </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="float">
+                            <label for="surname">Last Name: </label>
+                            <input type="text" id="surname" name="surname" required>
+                        </div>
+
+                        <div class="float">
+                            <label for="email_adresa"> Email Adress:
+                                <input type="email" id="email_adresa" name="email_adresa" required>
+                            </label>
+                        </div>
+
+                        <div class="float">
+                            <label for="phone">Phone Number: </label>
+                            <input type="tel" name="phone" id="phone" title="Sheno ne formatin +382(44)123-123" required
+                                pattern="[\+]\d{3}[\(]\d{2}[\)]\d{3}[\-]\d{3}">
+                        </div>
+
+                        <div class="float">
+                            <label for="checkin">Checkin: </label>
+                            <input type="date" name="checkin" id="checkin" required>
+                        </div>
+                        <div class="float">
+                            <label for="checkout">Checkout:
+                                <input type="date" name="checkout" id="checkout" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="dhomat">Number of Rooms: </label>
+                            <select id="dhomat">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+
+                            <label for="kerkimi">Search:
+                                <input type="search" name="kerkimi" id="kerkimi">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="pamje_nga_deti">Sea View</label>
+                            <input type="checkbox" name="pamje_nga_deti" id="pamje_nga_deti" checked>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="place" id="place1" checked>Santorini
+                            <input type="radio" name="place" id="place2">Mynokos
+                            <input type="radio" name="place" id="place3">Zakynthos
+                        </div>
+
+                        <div>
+                            <textarea name="kerkesa" id="kerkesa" cols="20" rows="10"
+                                placeholder="WRITE SPECIFIC REQUEST..."></textarea>
+                        </div>
+
+                        <div id="butonat">
+                            <input type="reset" name="fshij" id="fshij" value="Reset">
+
+                            <input type="submit" name="dergo" id="dergo" value="Place Reservation">
+                        </div>
+                    </form>
+            </aside>
+        </main>
+        <footer>
+            <p>CopyRight by ICT Kosova - DIAR HYSENI -</p>
+        </footer>
+    </div>
+</body>
+
+</html>

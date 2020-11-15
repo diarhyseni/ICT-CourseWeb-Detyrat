@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo1.png" type="image/png">
+    <title>Computer Hardware</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="images/1.png">
+    <div id="container">
+        <header>
+            <div id="logo_header">
+                <a href="index.html"><img src="images/logo1.png" alt="logo" width="300" height="100"></a>
+            </div>
+            <div id="link_header">
+                <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" width="35" height="35">
+                </a>
+                <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram" width="35"
+                        height="35"></a>
+                <a href="https://www.gmail.com"><img src="images/gmail.png" alt="gmail" width="35" height="35"></a>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gaming.html">For Gaming</a></li>
+                <li><a href="work.html">For Work</a></li>
+                <li><a href="accessories.html">Gaming Accessories</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="ads">
+                <h1 style="color: lightseagreen;"> Top New Products </h1>
+                <div id="ad1">
+                    <iframe width="565" height="250" src="https://www.youtube.com/embed/o3IQ1JrXnV8" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="ad2">
+                    <iframe width="565" height="250" src="https://www.youtube.com/embed/1aqI7EnfbVM" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="contact">
+                <form id="kontakti" method="POST" action="kontakti.html" enctype="multipart/form-data"
+                    autocomplete="off form">
+                    <h1 style="color: lightseagreen;">Contact Us</h1>
+
+                    <div class="float">
+                        <label for="name">First Name: </label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="float">
+                        <label for="surname">Last Name: </label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+
+                    <div class="float">
+                        <label for="email_adresa"> Email Adress:
+                            <input type="email" id="email_adresa" name="email_adresa" required>
+                        </label>
+                    </div>
+
+                    <div class="float">
+                        <label for="phone">Phone Number: </label>
+                        <input type="tel" name="phone" id="phone" title="Sheno ne formatin +382(44)123-123" required
+                            pattern="[\+]\d{3}[\(]\d{2}[\)]\d{3}[\-]\d{3}">
+                    </div>
+
+                    <div class="float">
+                        <label for="kerkimi">Search: </label>
+                        <input type="search" name="kerkimi" id="kerkimi">
+                    </div>
+                    <div>
+                        <textarea name="kerkesa" id="kerkesa" placeholder="Your Message / Request..."></textarea>
+                    </div>
+                    <div id="butonat">
+                        <input type="reset" name="fshij" id="fshij" value="Reset">
+
+                        <input type="submit" name="dergo" id="dergo" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <br>
+            <br>
+            <footer>
+                <div id="footer_logo">
+                    <img src="images/logo.png" alt="footer_logo" width="710">
+                </div>
+                <br>
+                <div id="footer-aside">
+                    <h2>CopyRight by ICT Kosova -DIAR HYSENI-</h2>
+                </div>
+
+            </footer>
+</body>
+
+</html>
